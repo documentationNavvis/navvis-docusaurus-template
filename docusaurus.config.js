@@ -24,11 +24,11 @@ module.exports = {
           items: [
             {
               label: 'Style Guide',
-              to: 'docs/',
+              to: '#lab',
             },
             {
               label: 'Second Doc',
-              to: 'docs/doc2/',
+              to: '#lab',
             },
           ],
         },
@@ -54,7 +54,7 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              to: '#lab',
             },
             {
               label: 'GitHub',

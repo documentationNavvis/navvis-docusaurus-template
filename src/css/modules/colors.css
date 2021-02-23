@@ -15,6 +15,20 @@
     background-color: rgb(240,239,242);
 }
 
+/* Notes */
+:root[data-theme='light'] {
+    --ifm-color-secondary: rgb(240,239,242); /* Note note and footerl inks */
+    --ifm-color-success: #00c661; /* Tip note */
+    --ifm-color-info: #DEB100; /* Important note */
+    --ifm-color-warning: #DF0035; /* Warning note */
+    --ifm-color-danger: #BB001E; /* Danger note */
+}
+
+/* Blockquotes */
+:root[data-theme='light'] blockquote {
+    color: #606770;
+}
+
 /*** DARK ***/
 
 /* Text */
@@ -32,3 +46,15 @@
     background-color: #18191a;
 }
 
+/* Notes */
+:root[data-theme='dark'] {
+    --ifm-color-secondary: rgb(240,239,242); /* Note note and footerl inks */
+    --ifm-color-success: #4ce794; /* Tip note */
+    --ifm-color-info: #ffd73e; /* Important note */
+    --ifm-color-warning: #fb6b8f; /* Warning note */
+    --ifm-color-danger: #f93a6a; /* Danger note */
+}
+
+:root[data-theme='dark'] blockquote {
+    color: #dadde1;
+}
