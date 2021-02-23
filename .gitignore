@@ -106,3 +106,4 @@ dist
 # Repo-specific
 .docusaurus
 yarn.lock
+build/

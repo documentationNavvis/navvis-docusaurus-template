@@ -1,0 +1,34 @@
+/*** LIGHT ***/
+
+/* Text */
+:root[data-theme='light'] {
+    --ifm-color-primary: rgb(25,121,228); /* Primary, left TOC inactive links */
+}
+
+/* Navbar */
+:root[data-theme='light'] #__docusaurus > nav.navbar {
+    background-color: rgb(17,46,79);
+}
+
+/* Left TOC */
+:root[data-theme='light'] #__docusaurus > div.main-wrapper div.menu {
+    background-color: rgb(240,239,242);
+}
+
+/*** DARK ***/
+
+/* Text */
+:root[data-theme='dark'] {
+    --ifm-color-primary: rgb(25,121,228); /* Primary, left TOC inactive links */
+}
+
+/* Navbar */
+:root[data-theme='dark'] #__docusaurus > nav.navbar {
+    background-color: rgb(17,46,79);
+}
+
+/* Left TOC */
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper div.menu {
+    background-color: #18191a;
+}
+
