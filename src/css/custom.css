@@ -8,8 +8,10 @@
 @import "modules/typography.css";
 @import "modules/colors.css";
 @import "modules/codeblocks.css";
+@import "modules/right-toc.css";
 
 /* Remove navbar title on the right of the logo */
 strong.navbar__title {
-    display: none;
+    display: none; /* uncomment once deployed to eD */
+    color: rgb(240,239,242);
 }

@@ -15,9 +15,19 @@
     background-color: rgb(240,239,242);
 }
 
+/* Left TOC - Collapse button */
+:root[data-theme='light'] #__docusaurus > div.main-wrapper button {
+    background: #e4e3e6;
+    border-color: #e4e3e6;
+}
+:root[data-theme='light'] #__docusaurus > div.main-wrapper button:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+}
+
 /* Notes */
 :root[data-theme='light'] {
-    --ifm-color-secondary: rgb(240,239,242); /* Note note and footerl inks */
+    --ifm-color-secondary: rgb(240,239,242); /* Note note and footer inks */
     --ifm-color-success: #00c661; /* Tip note */
     --ifm-color-info: #DEB100; /* Important note */
     --ifm-color-warning: #DF0035; /* Warning note */
@@ -44,6 +54,16 @@
 /* Left TOC */
 :root[data-theme='dark'] #__docusaurus > div.main-wrapper div.menu {
     background-color: #18191a;
+}
+
+/* Left TOC - Collapse button */
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button {
+    background: #242526;
+    border-color: #242526;
+}
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button:hover {
+    background: #606770;
+    border-color: #606770;
 }
 
 /* Notes */
