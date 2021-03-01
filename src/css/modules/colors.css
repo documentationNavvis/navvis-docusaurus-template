@@ -19,10 +19,15 @@
 :root[data-theme='light'] #__docusaurus > div.main-wrapper button {
     background: #e4e3e6;
     border-color: #e4e3e6;
+    color: #606770;
 }
 :root[data-theme='light'] #__docusaurus > div.main-wrapper button:hover {
     background: #ffffff;
     border-color: #ffffff;
+    color: #606770;
+}
+:root[data-theme='light'] #__docusaurus > div.main-wrapper button.button--sm:hover {
+    border-color: #606770;
 }
 
 /* Notes */
@@ -52,18 +57,32 @@
 }
 
 /* Left TOC */
+
+/* This breaks the right border
 :root[data-theme='dark'] #__docusaurus > div.main-wrapper div.menu {
     background-color: #18191a;
-}
+}*/
 
 /* Left TOC - Collapse button */
 :root[data-theme='dark'] #__docusaurus > div.main-wrapper button {
     background: #242526;
-    border-color: #242526;
+    border: none;
+    border-right: var(--ifm-button-border-width) solid #606770;
 }
 :root[data-theme='dark'] #__docusaurus > div.main-wrapper button:hover {
     background: #606770;
-    border-color: #606770;
+    border: none;
+    border-right: var(--ifm-button-border-width) solid #606770;
+}
+
+/* Hovered collapse button */
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button.button--sm {
+    border: var(--ifm-button-border-width) solid #606770;
+    color: rgb(240,239,242);
+}
+:root[data-theme='dark'] #__docusaurus > div.main-wrapper button.button--sm:hover {
+    border: var(--ifm-button-border-width) solid #606770;
+    color: rgb(240,239,242);
 }
 
 /* Notes */
