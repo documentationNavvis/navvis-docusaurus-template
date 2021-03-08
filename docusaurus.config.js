@@ -5,7 +5,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
   organizationName: 'NavVis', // Usually your GitHub org/user name.
   projectName: 'navvis-docusaurus-template', // Usually your repo name.
   themeConfig: {
@@ -17,55 +17,24 @@ module.exports = {
       },
     },
     hideableSidebar: true, // Remove to hide the left pane
-    sidebarCollapsible: false, // Remove to disable the left-pane collapse/expand button
+    //sidebarCollapsible: false, // Remove to disable the left-pane collapse/expand button
     footer: {
       style: 'dark',
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Style Guide',
-      //         to: '#lab',
-      //       },
-      //       {
-      //         label: 'Second Doc',
-      //         to: '#lab',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Stack Overflow',
-      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
-      //       {
-      //         label: 'Twitter',
-      //         href: 'https://twitter.com/docusaurus',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: '#lab',
-      //       },
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/facebook/docusaurus',
-      //       },
-      //     ],
-      //   },
-      // ],
       copyright: `Copyright © ${new Date().getFullYear()} NavVis, Inc.`,
+    },
+    // The following determines the dark/light mode switch styling
+    colorMode: {
+      respectPrefersColorScheme: true,
+      switchConfig: {
+        lightIcon: "\u{25CB}",
+        darkIcon: "\u{25CF}",
+        darkIconStyle: {
+          color: `#f4f4f4`,
+        },
+        lightIconStyle: {
+          color: `#f4f4f4`,
+        },
+      },
     },
   },
   presets: [
