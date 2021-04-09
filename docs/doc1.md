@@ -180,7 +180,7 @@ This line is also a separate paragraph, but... This line is only separated by a 
 
 :::note
 
-This is a note
+This is a note [I'm an inline-style link](https://www.google.com/)
 
 :::
 
