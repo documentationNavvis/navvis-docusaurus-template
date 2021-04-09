@@ -44,9 +44,10 @@ html[data-theme='light'] div.admonition.admonition-note.alert.alert--secondary {
     color: #ffffff;
     border: none;
 }
+/*
 html[data-theme='light'] div.admonition.admonition-note.alert.alert--secondary > div.admonition-heading > h5 > span {
     filter: invert(100%);
-}
+}*/
 
 /* Blockquotes */
 :root[data-theme='light'] blockquote {
@@ -115,25 +116,49 @@ html[data-theme='dark'] div.admonition.admonition-warning.alert.alert--danger {
     color: #f5f6f7;
     border: none;
 }
+/*
 html[data-theme='dark'] div.admonition.admonition-note.alert.alert--secondary > div.admonition-heading > h5 > span,
 html[data-theme='dark'] div.admonition.admonition-tip.alert.alert--success > div.admonition-heading > h5 > span,
 html[data-theme='dark'] div.admonition.admonition-important.alert.alert--info > div.admonition-heading > h5 > span,
 html[data-theme='dark'] div.admonition.admonition-caution.alert.alert--warning > div.admonition-heading > h5 > span,
 html[data-theme='dark'] div.admonition.admonition-warning.alert.alert--danger > div.admonition-heading > h5 > span {
     filter: invert(100%);
-}
+}*/
 
 :root[data-theme='dark'] blockquote {
     color: #dadde1;
+}
+
+/* Replace default note admonition icons */
+div.admonition.admonition-note.alert.alert--secondary > div.admonition-heading > h5 > span > svg > path {
+    display: none;
+}
+div.admonition.admonition-note.alert.alert--secondary > div.admonition-heading > h5 > span svg {
+    background-image: url("/static/img/note_icons/Note.svg");
+}
+
+/* Replace default tip admonition icons */
+div.admonition.admonition-tip.alert.alert--success > div.admonition-heading > h5 > span > svg > path {
+    display: none;
+}
+div.admonition.admonition-tip.alert.alert--success > div.admonition-heading > h5 > span svg {
+    background-image: url("/static/img/note_icons/Tip.svg");
+}
+
+/* Replace default important admonition icons */
+div.admonition.admonition-important.alert.alert--info > div.admonition-heading > h5 > span > svg > path {
+    display: none;
+}
+div.admonition.admonition-important.alert.alert--info > div.admonition-heading > h5 > span svg {
+    background-image: url("/static/img/note_icons/Important.svg");
 }
 
 /* Replace default caution admonition icons */
 div.admonition.admonition-caution.alert.alert--warning > div.admonition-heading > h5 > span > svg > path {
     display: none;
 }
-
 div.admonition.admonition-caution.alert.alert--warning > div.admonition-heading > h5 > span svg {
-    background-image: url("data:image/svg+xml, %3Csvg height='22' viewBox='0 0 22 22' width='22' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m5 20.5a3.5 3.5 0 0 1 -3.5-3.5 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1 -3.5 3.5m0-8.5a5 5 0 0 0 -5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0 -5-5m9.8-2h4.2v-1.8h-3.2l-1.94-3.27c-.29-.5-.86-.83-1.46-.83-.47 0-.9.19-1.2.5l-3.7 3.69c-.31.31-.5.71-.5 1.21 0 .63.33 1.16.85 1.47l3.35 2.03v5h1.8v-6.5l-2.25-1.65 2.32-2.35m5.93 13a3.5 3.5 0 0 1 -3.5-3.5 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1 -3.5 3.5m0-8.5a5 5 0 0 0 -5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0 -5-5m-3-7.2c1 0 1.8-.8 1.8-1.8s-.8-1.8-1.8-1.8-1.8.8-1.8 1.8.8 1.8 1.8 1.8z'/%3E%3C/svg%3E");
+    background-image: url("/static/img/note_icons/Caution.svg");
 }
 
 /* Replace default warning admonition icons */
@@ -141,5 +166,5 @@ div.admonition.admonition-warning.alert.alert--danger > div.admonition-heading >
     display: none;
 }
 div.admonition.admonition-warning.alert.alert--danger > div.admonition-heading > h5 > span svg {
-    background-image: url("data:image/svg+xml, %3Csvg height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m5 20.5a3.5 3.5 0 0 1 -3.5-3.5 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1 -3.5 3.5m0-8.5a5 5 0 0 0 -5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0 -5-5m9.8-2h4.2v-1.8h-3.2l-1.94-3.27c-.29-.5-.86-.83-1.46-.83-.47 0-.9.19-1.2.5l-3.7 3.69c-.31.31-.5.71-.5 1.21 0 .63.33 1.16.85 1.47l3.35 2.03v5h1.8v-6.5l-2.25-1.65 2.32-2.35m5.93 13a3.5 3.5 0 0 1 -3.5-3.5 3.5 3.5 0 0 1 3.5-3.5 3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1 -3.5 3.5m0-8.5a5 5 0 0 0 -5 5 5 5 0 0 0 5 5 5 5 0 0 0 5-5 5 5 0 0 0 -5-5m-3-7.2c1 0 1.8-.8 1.8-1.8s-.8-1.8-1.8-1.8-1.8.8-1.8 1.8.8 1.8 1.8 1.8z'/%3E%3C/svg%3E");
+    background-image: url("/static/img/note_icons/warning.svg");
 }
