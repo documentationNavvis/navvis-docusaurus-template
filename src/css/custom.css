@@ -15,3 +15,8 @@ strong.navbar__title {
     display: none; /* uncomment once deployed to eD */
     color: rgb(240,239,242);
 }
+
+/* Spacing between the top bar and heading fix */
+:root {
+    --ifm-h1-vertical-rhythm-top: 3;
+}
