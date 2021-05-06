@@ -1,26 +1,26 @@
 module.exports = {
-  title: 'NavVis',
-  tagline: 'NavVis Webhelp',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.svg',
-  organizationName: 'NavVis', // Usually your GitHub org/user name.
-  projectName: 'navvis-docusaurus-template', // Usually your repo name.
+  title: "NavVis",
+  tagline: "NavVis Webhelp",
+  url: "https://your-docusaurus-test-site.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.svg",
+  organizationName: "NavVis", // Usually your GitHub org/user name.
+  projectName: "navvis-docusaurus-template", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'NavVis',
+      title: "NavVis",
       logo: {
-        alt: 'NavVis Logo',
-        src: 'img/NavVis_Logo_Digital_White.png',
+        alt: "NavVis Logo",
+        src: "img/IVION-Logo-negative.svg",
       },
     },
     hideableSidebar: true, // Remove to hide the left pane
     //sidebarCollapsible: false, // Remove to disable the left-pane collapse/expand button
     footer: {
-      style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} NavVis, Inc.`,
+      style: "dark",
+      copyright: `Copyright © ${new Date().getFullYear()} NavVis GmbH.`,
     },
     // The following determines the dark/light mode switch styling
     colorMode: {
@@ -39,17 +39,17 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         blog: false,
         pages: false,
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           path: "./docs",
           routeBasePath: "/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       },
     ],
