@@ -14,13 +14,13 @@ div.note {
   border-radius: var(--ifm-alert-border-radius);
   padding: var(--ifm-alert-padding-vertical) var(--ifm-alert-padding-horizontal);
   background: #112e4f;
-  color: #ffffff;
+  color: #f5f6f7;
   border: none;
 }
 
 div.note > span.note__title {
   display: block;
-  color: #fff;
+  color: #f5f6f7;
   font-weight: bold;
 }
 
@@ -48,3 +48,14 @@ div.note > span.note__title::before {
   background-repeat: no-repeat;
 }
 
+/* Fix issues with colors of note children */
+div.note,
+div.note * {
+  color: #f5f6f7;
+}
+
+/* Fix issues with background colors */
+div.note code {
+  color: #f5f6f7;
+  background-color: rgb(72, 77, 91);
+}
