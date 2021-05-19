@@ -27,3 +27,6 @@ strong.navbar__title {
 .markdown {
     --ifm-h1-vertical-rhythm-top: 0; 
 }
+
+/* Backward-compatibility */
+@import "modules/legacy_code.css";
