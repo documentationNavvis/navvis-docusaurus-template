@@ -42,6 +42,10 @@ div.note.note_warning {
 }
 
 /* Custom icons */
+div.note > span.note__title::before {
+  padding-right: 0.8em;
+}
+
 div.note_note > span.note__title::before {
   content: "---";
   color: transparent;
