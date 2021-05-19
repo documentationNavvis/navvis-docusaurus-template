@@ -5,12 +5,17 @@
  * work well for content-centric websites.
  */
 
+/* Docusaurus */
 @import "modules/typography.css";
 @import "modules/colors.css";
+@import "modules/right-toc.css";
+
+/* DITA/Central Content Area */
 @import "modules/lists.css";
 @import "modules/codeblocks.css";
 @import "modules/note.css";
-@import "modules/right-toc.css";
+
+/* Fixes */
 
 /* Remove navbar title on the right of the logo */
 strong.navbar__title {

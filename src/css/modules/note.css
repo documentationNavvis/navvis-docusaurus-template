@@ -18,19 +18,19 @@ div.note {
 }
 
 div.note.note_tip {
-  background: var(--ifm-color-success)
+  background: #1979e4;
 }
 
 div.note.note_important {
-  background: var(--ifm-color-info)
+  background: #00c661;
 }
 
 div.note.note_caution {
-  background: var(--ifm-color-warning)
+  background: #deb100;
 }
 
 div.note.note_warning {
-  background: var(--ifm-color-danger)
+  background: #df0035;
 }
 
 
