@@ -25,7 +25,7 @@
 /* Fixes */
 
 /* Remove navbar title on the right of the logo */
-strong.navbar__title {
+.navbar__title {
     display: none; /* uncomment once deployed to eD */
     color: rgb(240,239,242);
 }
