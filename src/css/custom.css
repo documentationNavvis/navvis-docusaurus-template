@@ -23,8 +23,6 @@
 @import "modules/step_substep_numbering.css";
 @import "modules/hide_empty_elements.css";
 
-
-
 /* Backward-compatibility */
 @import "modules/legacy_code.css";
 
@@ -39,4 +37,9 @@
 /* Spacing between the top bar and heading fix */
 .markdown {
     --ifm-h1-vertical-rhythm-top: 0; 
+}
+
+/* Fix troublebody */
+div.troubleSolution {
+    padding-left: 0;
 }
