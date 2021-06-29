@@ -54,7 +54,7 @@ module.exports = {
       },
     ],
   ],
-  plugins: [
+  /*plugins: [
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
@@ -65,5 +65,5 @@ module.exports = {
         language: "en",
       },
     ],
-  ],
+  ],*/
 };
