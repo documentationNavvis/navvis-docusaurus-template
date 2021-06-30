@@ -54,7 +54,8 @@ module.exports = {
       },
     ],
   ],
-  /*plugins: [
+  /* Uncomment to enable search on a local instance
+  plugins: [
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
@@ -65,5 +66,5 @@ module.exports = {
         language: "en",
       },
     ],
-  ],*/
+  ], */
 };
