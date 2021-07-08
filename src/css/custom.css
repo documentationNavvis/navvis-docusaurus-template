@@ -49,3 +49,8 @@ div.troubleSolution {
 table {
     border: none;
 }
+
+/* Fix anchors position */
+.anchor_top_offset {
+    top: calc(var(--ifm-navbar-height) * -1);
+}
