@@ -58,10 +58,9 @@ module.exports = {
     [
       require.resolve("@cmfcmf/docusaurus-search-local"),
       {
-        indexDocs: true,
         indexDocSidebarParentCategories: 3,
         indexPages: false,
-        language: "en",
+        language: "en"
       },
     ],
   ],
