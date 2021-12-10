@@ -54,4 +54,15 @@ module.exports = {
       },
     ],
   ],
+  plugins: [
+    [
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        indexDocs: true,
+        indexDocSidebarParentCategories: 3,
+        indexPages: false,
+        language: "en",
+      },
+    ],
+  ],
 };
