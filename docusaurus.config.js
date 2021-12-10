@@ -54,17 +54,4 @@ module.exports = {
       },
     ],
   ],
-  /* Uncomment to enable search on a local instance
-  plugins: [
-    [
-      require.resolve("@cmfcmf/docusaurus-search-local"),
-      {
-        indexDocs: true,
-        docsRouteBasePath: "/",
-        indexDocSidebarParentCategories: 3,
-        indexPages: false,
-        language: "en",
-      },
-    ],
-  ], */
 };
