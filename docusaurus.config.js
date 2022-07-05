@@ -23,7 +23,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} NavVis GmbH.`,
     },
     // The following determines the dark/light mode switch styling
-    colorMode: {
+    /*colorMode: {
       respectPrefersColorScheme: true,
       switchConfig: {
         lightIcon: "\u{25CB}",
@@ -35,7 +35,7 @@ module.exports = {
           color: `#f4f4f4`,
         },
       },
-    },
+    },*/
   },
   presets: [
     [
