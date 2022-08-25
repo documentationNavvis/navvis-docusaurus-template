@@ -1,41 +1,39 @@
 module.exports = {
-  title: "NavVis",
+  title: "NavVis IVION Documentation",
   tagline: "NavVis Webhelp",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.svg",
-  organizationName: "NavVis", // Usually your GitHub org/user name.
-  projectName: "navvis-docusaurus-template", // Usually your repo name.
+  organizationName: "NavVis",
+  projectName: "navvis-docusaurus-template",
   themeConfig: {
     navbar: {
-      title: "NavVis",
+      title: "NavVis IVION Documentation",
       logo: {
-        alt: "NavVis Logo",
+        alt: "NavVis IVION Documentation",
         src: "img/IVION-Logo-negative.svg",
       },
+      items: [
+        {
+          type: "docsVersionDropdown",
+          position: "left",
+        }
+       ]
     },
-    hideableSidebar: true, // Remove to hide the left pane
-    //sidebarCollapsible: false, // Remove to disable the left-pane collapse/expand button
+    docs: {
+      sidebar: {
+        hideable: true
+      }
+    },
     footer: {
       style: "dark",
       copyright: `Copyright © ${new Date().getFullYear()} NavVis GmbH.`,
     },
-    // The following determines the dark/light mode switch styling
-    /*colorMode: {
-      respectPrefersColorScheme: true,
-      switchConfig: {
-        lightIcon: "\u{25CB}",
-        darkIcon: "\u{25CF}",
-        darkIconStyle: {
-          color: `#f4f4f4`,
-        },
-        lightIconStyle: {
-          color: `#f4f4f4`,
-        },
-      },
-    },*/
+    colorMode: {
+      respectPrefersColorScheme: true
+    }
   },
   presets: [
     [
@@ -55,6 +53,11 @@ module.exports = {
     ],
   ],
   plugins: [
-    [require.resolve('@cmfcmf/docusaurus-search-local'),{}]
-  ],
+    [
+      require.resolve('@cmfcmf/docusaurus-search-local'),
+      {
+        indexBlog: false
+      }
+    ]
+  ]
 };
